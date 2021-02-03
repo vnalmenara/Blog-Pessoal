@@ -1,7 +1,6 @@
 package org.generation.BlogPessoal.seguranca;
 
 import java.util.Optional;
-
 import org.generation.BlogPessoal.model.Usuario;
 import org.generation.BlogPessoal.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
