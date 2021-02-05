@@ -18,8 +18,9 @@ public class UsuarioService {
 
 	public Optional<Usuario> CadastrarUsuario(Usuario usuario) {
 
-		if (repository.findByUsuario(usuario.getUsuario()).isPresent())
+		if (repository.findByUsuario(usuario.getUsuario()).isPresent()) {
 			return null;
+		}
 
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
@@ -51,5 +52,4 @@ public class UsuarioService {
 		}
 		return null;
 	}
-
 }
